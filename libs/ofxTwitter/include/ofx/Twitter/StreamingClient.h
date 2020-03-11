@@ -295,7 +295,7 @@ void StreamingClient::unregisterStreamingEvents(ListenerClass* listener,
     onDisconnect.remove(listener, &ListenerClass::onDisconnect, priority);
     onStatus.remove(listener, &ListenerClass::onStatus, priority);
     onStatusDeletedNotice.remove(listener, &ListenerClass::onStatusDeletedNotice, priority);
-    onLocationDeletedNotice.remove(listener, &ListenerClass::onLocationDeletedNotices, priority);
+    onLocationDeletedNotice.remove(listener, &ListenerClass::onLocationDeletedNotice, priority);
     onLimitNotice.remove(listener, &ListenerClass::onLimitNotice, priority);
     onStatusWithheldNotice.remove(listener, &ListenerClass::onStatusWithheldNotice, priority);
     onUserWitheldNotice.remove(listener, &ListenerClass::onUserWitheldNotice, priority);
